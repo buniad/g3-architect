@@ -3,9 +3,17 @@
 
 
 /* Shared Styles  */
-.btn-primary{
-    
+.btn-primary {
+    background-color: rgb(255, 155, 97);
+    border: 0px;
+    padding: 20px 25px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
 }
+
 * {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
@@ -43,7 +51,7 @@ a {
     color: black;
 }
 
-.nav-logo{
+.nav-logo {
     font-size: 2.8rem;
     font-weight: 700;
     color: black;
@@ -53,19 +61,110 @@ a {
 
 /* Banner Contents start */
 
-.banner-title{
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: black;
 }
 
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
-    margin: auto;
+    margin: 0px auto;
 }
 
-.banner-decription{
-    color:rgb(156, 156, 156);
+.banner-decription {
+    color: rgb(156, 156, 156);
 }
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
 /* Banner Contents end */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+
+/* Feature section Start */
+
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.teams-content{
+    padding: 0px 70px;
+}
+
+.teams-title{
+    font-size: 2.8rem;
+}
+
+.span-1{
+    color: gray;
+    font-weight: 500;
+}
+
+.span-2, .span-3{
+    color: black;
+    font-weight: 700;
+}
+
+.span-3{
+    color: rgb(255, 155, 97);
+}
+/* Feature section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Media and queries */
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+}
+
+/* Tablet Device Reponsive */
+
+@media screen and (min-width: 577px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
